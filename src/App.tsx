@@ -154,10 +154,12 @@ export default function App() {
                   className="group relative aspect-square rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-pink-100"
                 >
                   <img
-                    src={`/images/photo${i}.jpg`}
+                    src={`images/photo${i}.jpg`}
                     alt={`Wspomnienie ${i}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    onLoad={() => console.log(`Loaded: images/photo${i}.jpg`)}
                     onError={(e) => {
+                      console.error(`Failed to load: images/photo${i}.jpg`);
                       // Fallback to placeholder if local image doesn't exist yet
                       (e.target as HTMLImageElement).src = `https://picsum.photos/seed/${i + 100}/800/800`;
                     }}
