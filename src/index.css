@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-romantic: "Dancing Script", cursive;
+}
+
+body {
+  background-color: #fff5f5;
+  color: #c53030;
+}
+
+.heart-bg {
+  background-image: radial-gradient(#feb2b2 1px, transparent 1px);
+  background-size: 20px 20px;
+}
