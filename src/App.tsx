@@ -144,8 +144,8 @@ export default function App() {
               <p className="text-pink-500 italic">Każda chwila z Tobą jest wyjątkowa...</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
